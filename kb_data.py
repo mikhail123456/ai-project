@@ -1,0 +1,38 @@
+KB = {
+    "place_north": {
+        "type": "place",
+        "title": "Старт",
+        "description": "Северный корпус, зал 205",
+        "tags": ["турнир", "север"],
+        "status": "ready",
+        "source": "Организатор турнира",
+        "links": [],
+    },
+    "place_south": {
+        "type": "place",
+        "title": "Старт",
+        "description": "Южный корпус, зал 110",
+        "tags": ["тренировка", "юг"],
+        "status": "ready",
+        "source": "Организатор турнира",
+        "links": [],
+    },
+    "event_final": {
+        "type": "event",
+        "title": "Финал роботов",
+        "description": "Сбор команды в 15:00",
+        "tags": ["турнир", "роботы"],
+        "status": "planned",
+        "source": "Расписание турнира",
+        "links": ["place_north"],
+    },
+    "event_training": {
+        "type": "event",
+        "title": "Тренировка",
+        "description": "Проверка роботов в 12:00",
+        "tags": ["тренировка"],
+        "status": "planned",
+        "source": "Расписание клуба",
+        "links": ["place_south"],
+    },
+}
